@@ -14,9 +14,21 @@ Execute the command below and follow the instructions
 $ sudo dpkg-reconfigure keyboard-configuration
 ```
 
-**System**
+**Login**
 
 Hide user from login list
+
+Edit/create the file `/etc/lightdm/lightdm.conf`
+```
+[SeatDefaults]
+greeter-session=unity-greeter
+user-session=ubuntu
+greeter-show-manual-login=true    
+greeter-hide-users=true    
+allow-guest=false
+```
+
+**System**
 
 ```
 $ sudo apt-get install -y net-tools
