@@ -20,32 +20,66 @@ Hide user from login list
 
 ```
 $ sudo apt-get install -y net-tools
-$ sudo apt-get install -y htoop
-$ sudo apt-get install -y glances
-$ sudo apt-get install -y lib32-libstdc++5 glibc
-$ sudo apt-get install -y ubuntu-make -y
+$ sudo apt-get install -y htop
+$ sudo apt-get install -y glances -y
+
+# ubuntu make
+$ sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+$ sudo apt update
+$ sudo apt-get install -y ubuntu-make
 ```
+
+**Database**
+```
+$ sudo apt-get install -y mysql-client
+```
+
+**Git**
+```
+$ sudo apt-get install -y git tig
+```
+
+**Languages**
+```
+$ sudo apt-get install -y openjdk-8-jdk
+$ sudo apt-get install -y elixir
+
+# Crystal
+$ curl https://dist.crystal-lang.org/apt/setup.sh | sudo bash
+$ apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54
+$ echo "deb https://dist.crystal-lang.org/apt crystal main" > sudo /etc/apt/sources.list.d/crystal.list
+$ sudo apt-get update
+$ sudo apt-get install crystal
+$ sudo apt-get install build-essential
+```
+
+For Ruby, follow the instructions on [Ruby Verion Manager](https://rvm.io/rvm/install)
 
 **Text Editors**
 ```
 $ sudo apt-get install -y vim
+```
+For Vundle, [follow this](https://github.com/alismed/vimfiles).
 
-# Sublime Text
+
+Sublime Text
+```
 $ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 $ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 $ sudo apt-get update
 $ sudo apt-get install sublime-text -y
 ```
 
+Visual Studio Code
+
+Download the .deb from [ofcial web site](https://code.visualstudio.com/) and execute the package.
+
 **IDE's**
 ```
-$ sudo apt-get install -y eclipse-jee
+$ umake ide eclipse-jee
+$ umake ide eclipse-php
+$ umake ide eclipse-cpp
 $ sudo apt-get install -y arduino
-```
-
-**Database**
-```
-$ sudo apt-get install -y mysql-clients
 ```
 
 **Terminal**
@@ -79,41 +113,17 @@ $ sudo apt-get install -y imagemagick
 
 **Browsers**
 ```
-$ sudo apt-get install -y chromiun
-$ sudo apt-get install -y firefox
-$ sudo apt-get install -y flashplugin
+$ sudo apt-get install -y chromium-browser
 $ sudo apt-get install -y wget curl
 ```
 
-```
-$ sudo apt-get install -y tar gzip bzip2 unzip unrar p7zip
-```
-
-**Languages**
-```
-$ sudo apt-get install -y openjdk-8-jdk
-$ sudo apt-get install -y elixir
-
-# Crystal
-$ curl https://dist.crystal-lang.org/apt/setup.sh | sudo bash
-$ apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54
-$ echo "deb https://dist.crystal-lang.org/apt crystal main" > /etc/apt/sources.list.d/crystal.list
-$ sudo apt-get update
-$ sudo apt-get install crystal
-$ sudo apt-get install build-essential
-```
-
-For Ruby, follow the instructions on [Ruby Verion Manager](https://rvm.io/rvm/install)
-
-**Git**
-```
-$ sudo apt-get install -y git tig
-```
-
-
 **Docker**
 ```
-$ sudo apt-get install -y docker
+$ sudo apt-get install apt-transport-https ca-certificatescurl software-properties-common
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+$ sudo apt-get update
+$ sudo apt-get install -y docker-ce
 $ sudo gpasswd -a ${USER} docker
 $ sudo systemctl enable docker
 $ sudo systemctl start docker
