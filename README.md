@@ -54,6 +54,19 @@ $ sudo apt-get install -y git tig
 **Languages**
 ```
 $ sudo apt-get install -y openjdk-8-jdk
+
+# Java Home
+$ vim ~/.profile
+  JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+$ source ~/.profile
+
+# Maven
+$ sudo apt-get install -y maven
+```
+
+
+```
 $ sudo apt-get install -y elixir
 
 # Crystal
