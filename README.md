@@ -93,9 +93,14 @@ $ umake ide eclipse-php
 $ umake ide eclipse-cpp
 $ sudo apt-get install -y arduino
 
-# Android Studio
+```
+
+Android Studio
+
+[Download](https://developer.android.com/studio/) the lastest version.
+```
+# requisites
 $ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
-- [Download](https://developer.android.com/studio/) the lastest version.
 - Unzip the package in /usr/local/
 - Run the /usr/local/android-studio/bin/studio.sh and follow the instructions
 - Will take a few minutes to finish
