@@ -1,5 +1,5 @@
 ## Ubuntu after install
-My setup after install Ubuntu
+My setup after install Ubuntu 16.04
 
 **Update packages**
 
@@ -31,9 +31,11 @@ allow-guest=false
 **System**
 
 ```
+$ sudo apt-get install -y cowsay fortune
 $ sudo apt-get install -y net-tools
 $ sudo apt-get install -y htop
-$ sudo apt-get install -y glances -y
+$ sudo apt-get install -y glances
+$ sudo apt-get install -y putty
 
 # ubuntu make
 $ sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
@@ -41,9 +43,18 @@ $ sudo apt update
 $ sudo apt-get install -y ubuntu-make
 ```
 
+**Games**
+```
+$ sudo apt-get install -y zsnes
+$ sudo apt-get install -y mame mame-extra
+
+```
+
 **Database**
 ```
 $ sudo apt-get install -y mysql-client
+$ sudo apt-get install -y postgresql-client
+$ sudo apt-get install -y redis-tools
 ```
 
 **Git**
@@ -65,7 +76,7 @@ $ source ~/.profile
 $ sudo apt-get install -y maven
 ```
 
-
+# Elixir
 ```
 $ sudo apt-get install -y elixir
 
@@ -79,6 +90,14 @@ $ sudo apt-get install build-essential
 ```
 
 For Ruby, follow the instructions on [Ruby Verion Manager](https://rvm.io/rvm/install)
+
+# .Net Core
+```
+$ sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
+$ sudo apt-get update
+$ sudo apt-get install dotnet-dev-1.0.4
+```
 
 **Text Editors**
 ```
@@ -101,6 +120,7 @@ Download the .deb from [ofcial web site](https://code.visualstudio.com/) and exe
 
 **IDE's**
 ```
+$ sudo apt-get install fritzing
 $ umake ide eclipse-jee
 $ umake ide eclipse-php
 $ umake ide eclipse-cpp
@@ -151,6 +171,7 @@ $ sudo apt-get install -y imagemagick
 **Browsers**
 ```
 $ sudo apt-get install -y chromium-browser
+$ sudo apt-get install -y lynx
 $ sudo apt-get install -y wget curl
 ```
 
