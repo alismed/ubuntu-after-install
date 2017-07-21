@@ -46,6 +46,7 @@ $ sudo apt-get install -y ubuntu-make
 **Games**
 ```
 $ sudo apt-get install -y zsnes
+$ sudo apt-get install -y stella
 $ sudo apt-get install -y mame mame-extra
 
 ```
@@ -87,6 +88,12 @@ $ echo "deb https://dist.crystal-lang.org/apt crystal main" > sudo /etc/apt/sour
 $ sudo apt-get update
 $ sudo apt-get install crystal
 $ sudo apt-get install build-essential
+```
+
+# Python 3
+```
+$ sudo apt-get install -y python3-pip
+$ sudo apt-get install -y python3-venv
 ```
 
 For Ruby, follow the instructions on [Ruby Verion Manager](https://rvm.io/rvm/install)
@@ -208,4 +215,6 @@ $ nvm ls-remote
 # choice the version
 $ nvm install [x.x.x]
 ```
+
+[Install packages](/alismed/npm-package-install)
 
