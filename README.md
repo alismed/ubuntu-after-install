@@ -216,5 +216,5 @@ $ nvm ls-remote
 $ nvm install [x.x.x]
 ```
 
-[Install packages](/alismed/npm-package-install)
+[Install packages](https://github.com/alismed/npm-package-install)
 
