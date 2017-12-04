@@ -77,11 +77,11 @@ $ source ~/.profile
 $ sudo apt-get install -y maven
 ```
 
-# Elixir
+## Elixir
 ```
 $ sudo apt-get install -y elixir
 
-# Crystal
+## Crystal
 $ curl https://dist.crystal-lang.org/apt/setup.sh | sudo bash
 $ apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54
 $ echo "deb https://dist.crystal-lang.org/apt crystal main" > sudo /etc/apt/sources.list.d/crystal.list
@@ -90,7 +90,7 @@ $ sudo apt-get install crystal
 $ sudo apt-get install build-essential
 ```
 
-# Python 3
+## Python 3
 ```
 $ sudo apt-get install -y python3-pip
 $ sudo apt-get install -y python3-venv
@@ -98,12 +98,21 @@ $ sudo apt-get install -y python3-venv
 
 For Ruby, follow the instructions on [Ruby Verion Manager](https://rvm.io/rvm/install)
 
-# .Net Core
+## .Net Core
 ```
 $ sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
 $ sudo apt-get update
 $ sudo apt-get install dotnet-dev-1.0.4
+```
+
+## Kotlin
+```
+# first install java 8 or later
+$ wget -O sdk.install.sh "https://get.sdkman.io"
+$ bash sdk.install.sh
+$ source ~/.sdkman/bin/sdkman-init.sh 
+$ sdk install kotlin
 ```
 
 **Text Editors**
