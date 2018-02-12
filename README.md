@@ -247,3 +247,14 @@ $ nvm install [x.x.x]
 
 [Install packages](https://github.com/alismed/npm-package-install)
 
+
+**Communicators**
+```
+# is necessary restart after install
+$ sudo snap install slack --classic
+
+# skype
+$ wget https://go.skype.com/skypeforlinux-64.deb -O skype.deb
+$ sudo dpkg -i skype.deb
+$ rm skype.deb
+```
