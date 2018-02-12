@@ -1,5 +1,5 @@
 ## Ubuntu after install
-My setup after install Ubuntu 16.04
+My setup after install Ubuntu 17.10
 
 **Update packages**
 
@@ -18,14 +18,28 @@ $ sudo dpkg-reconfigure keyboard-configuration
 
 Hide user from login list
 
-Edit/create the file `/etc/lightdm/lightdm.conf`
+Create the file /etc/dconf/profile/gdm
 ```
-[SeatDefaults]
-greeter-session=unity-greeter
-user-session=ubuntu
-greeter-show-manual-login=true    
-greeter-hide-users=true    
-allow-guest=false
+user-db:user
+system-db:gdm
+file-db:/usr/share/gdm/greeter.dconf-defaults
+```
+
+Create the directory:
+```
+sudo mkdir /etc/dconf/db/gdm.d
+```
+
+Create the file /etc/dconf/db/gdm.d/00-login-screen:
+```
+[org/gnome/login-screen]
+# Do not show the user list
+disable-user-list=true
+```
+
+Execute
+```
+$ dconf update
 ```
 
 **System**
@@ -100,10 +114,12 @@ For Ruby, follow the instructions on [Ruby Verion Manager](https://rvm.io/rvm/in
 
 ## .Net Core
 ```
-$ sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
+$ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+$ sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+$ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod artful main" > /etc/apt/sources.list.d/dotnetdev.list'
+$ sudo apt-get install apt-transport-https
 $ sudo apt-get update
-$ sudo apt-get install dotnet-dev-1.0.4
+$ sudo apt-get install dotnet-sdk-2.1.4
 ```
 
 ## Kotlin
