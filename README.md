@@ -223,13 +223,17 @@ $ sudo systemctl start docker
 
 Using [Node Version Manager](https://github.com/creationix/nvm)
 ```
-$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 
-# The script clones the nvm repository to ~/.nvm and adds the source line to your profile (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc).
+# The script clones the nvm repository to ~/.nvm and adds the source line 
+# to your profile (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc).
 
 # This loads nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" 
+
+# execute
+$ source ~/<profile-file>
 ```
 
 **Install**
