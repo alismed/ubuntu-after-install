@@ -50,6 +50,7 @@ $ sudo apt-get install -y net-tools
 $ sudo apt-get install -y htop
 $ sudo apt-get install -y glances
 $ sudo apt-get install -y putty
+$ sudo apt-get install -y gnupg2
 
 # ubuntu make
 $ sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
