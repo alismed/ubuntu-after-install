@@ -1,5 +1,5 @@
 ## Ubuntu after install
-My setup after install Ubuntu 17.10
+My setup after install Ubuntu 18.04.1
 
 **Update packages**
 
@@ -42,6 +42,11 @@ Execute
 $ dconf update
 ```
 
+**Git**
+```
+$ sudo apt-get install -y git tig
+```
+
 **System**
 
 ```
@@ -51,10 +56,6 @@ $ sudo apt-get install -y htop
 $ sudo apt-get install -y glances
 $ sudo apt-get install -y putty
 $ sudo apt-get install -y gnupg2
-
-# ubuntu make
-$ sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
-$ sudo apt update
 $ sudo apt-get install -y ubuntu-make
 ```
 
@@ -71,11 +72,6 @@ $ sudo apt-get install -y mame mame-extra
 $ sudo apt-get install -y mysql-client
 $ sudo apt-get install -y postgresql-client
 $ sudo apt-get install -y redis-tools
-```
-
-**Git**
-```
-$ sudo apt-get install -y git tig
 ```
 
 **Languages**
@@ -114,13 +110,11 @@ $ sudo apt-get install -y python3-venv
 For Ruby, follow the instructions on [Ruby Verion Manager](https://rvm.io/rvm/install)
 
 ## .Net Core
-```
-$ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-$ sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-$ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod artful main" > /etc/apt/sources.list.d/dotnetdev.list'
+$ wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+$ sudo dpkg -i packages-microsoft-prod.deb
 $ sudo apt-get install apt-transport-https
 $ sudo apt-get update
-$ sudo apt-get install dotnet-sdk-2.1.4
+$ sudo apt-get install -y dotnet-hosting-2.0.8
 ```
 
 ## Kotlin
