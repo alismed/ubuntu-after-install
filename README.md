@@ -64,7 +64,6 @@ $ sudo apt-get install -y ubuntu-make
 $ sudo apt-get install -y zsnes
 $ sudo apt-get install -y stella
 $ sudo apt-get install -y mame mame-extra
-
 ```
 
 **Database**
@@ -110,6 +109,7 @@ $ sudo apt-get install -y python3-venv
 For Ruby, follow the instructions on [Ruby Verion Manager](https://rvm.io/rvm/install)
 
 ## .Net Core
+```
 $ wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
 $ sudo dpkg -i packages-microsoft-prod.deb
 $ sudo apt-get install apt-transport-https
