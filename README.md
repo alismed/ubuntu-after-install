@@ -39,7 +39,7 @@ disable-user-list=true
 
 Execute
 ```
-$ dconf update
+$ sudo dconf update
 ```
 
 **Git**
@@ -50,6 +50,7 @@ $ sudo apt-get install -y git tig
 **System**
 
 ```
+$ sudo apt-get install -y snap
 $ sudo apt-get install -y cowsay fortune
 $ sudo apt-get install -y net-tools
 $ sudo apt-get install -y htop
@@ -133,7 +134,12 @@ $ sudo apt-get install -y vim
 For Vundle, [follow this](https://github.com/alismed/vimfiles).
 
 
-Sublime Text
+**Postman**
+```
+snap install postman
+```
+
+**Sublime Text**
 ```
 $ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 $ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
@@ -141,7 +147,7 @@ $ sudo apt-get update
 $ sudo apt-get install sublime-text -y
 ```
 
-Visual Studio Code
+**Visual Studio Code**
 
 Download the .deb from [ofcial web site](https://code.visualstudio.com/) and execute the package.
 
@@ -155,7 +161,7 @@ $ sudo apt-get install -y arduino
 
 ```
 
-Android Studio
+**Android Studio**
 
 [Download](https://developer.android.com/studio/) the lastest version.
 ```
@@ -218,7 +224,7 @@ $ sudo systemctl start docker
 
 Using [Node Version Manager](https://github.com/creationix/nvm)
 ```
-$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
 # The script clones the nvm repository to ~/.nvm and adds the source line 
 # to your profile (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc).
@@ -247,9 +253,5 @@ $ nvm install [x.x.x]
 ```
 # is necessary restart after install
 $ sudo snap install slack --classic
+$ sudo snap install skype --classic
 
-# skype
-$ wget https://go.skype.com/skypeforlinux-64.deb -O skype.deb
-$ sudo dpkg -i skype.deb
-$ rm skype.deb
-```
