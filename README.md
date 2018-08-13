@@ -136,7 +136,7 @@ For Vundle, [follow this](https://github.com/alismed/vimfiles).
 
 **Postman**
 ```
-snap install postman
+$ sudo snap install postman
 ```
 
 **Sublime Text**
@@ -148,15 +148,14 @@ $ sudo apt-get install sublime-text -y
 ```
 
 **Visual Studio Code**
-
-Download the .deb from [ofcial web site](https://code.visualstudio.com/) and execute the package.
+```
+$ sudo snap install vscode --classic
+```
 
 **IDE's**
 ```
 $ sudo apt-get install fritzing
-$ umake ide eclipse-jee
-$ umake ide eclipse-php
-$ umake ide eclipse-cpp
+$ sudo snap install eclipse --clasic
 $ sudo apt-get install -y arduino
 
 ```
