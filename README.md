@@ -65,6 +65,7 @@ $ sudo apt-get install -y ubuntu-make
 $ sudo apt-get install -y zsnes
 $ sudo apt-get install -y stella
 $ sudo apt-get install -y mame mame-extra
+$ sudo snap install dosbox-x
 ```
 
 **Database**
