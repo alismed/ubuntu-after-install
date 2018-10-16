@@ -66,6 +66,11 @@ $ sudo apt-get install -y zsnes
 $ sudo apt-get install -y stella
 $ sudo apt-get install -y mame mame-extra
 $ sudo snap install dosbox-x
+
+# Mame
+$ sudo add-apt-repository ppa:c.falco/mame -y
+$ sudo apt-get update -y
+$ sudo apt-get install -y mame
 ```
 
 **Database**
