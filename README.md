@@ -133,6 +133,14 @@ $ source ~/.sdkman/bin/sdkman-init.sh
 $ sdk install kotlin
 ```
 
+## Salesforce Cli
+```
+$ wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
+$ mkdir sfdx
+$ tar xJf sfdx-linux-amd64.tar.xz -C sfdx --strip-components 1
+$ ./sfdx/install
+```
+
 **Text Editors**
 ```
 $ sudo apt-get install -y vim
