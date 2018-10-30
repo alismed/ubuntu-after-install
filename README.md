@@ -82,7 +82,7 @@ $ sudo apt-get install -y redis-tools
 # MongoDB v4.0
 $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
 $ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
-$ sudo apt-get install mongodb-org-tools -y
+$ sudo apt-get install pmongodb-org-tools mongodb-org-shell -y
 ```
 
 **Languages**
@@ -136,6 +136,11 @@ $ wget -O sdk.install.sh "https://get.sdkman.io"
 $ bash sdk.install.sh
 $ source ~/.sdkman/bin/sdkman-init.sh 
 $ sdk install kotlin
+```
+
+## Heroku Cli
+```
+$ sudo snap install heroku --classic
 ```
 
 ## Salesforce Cli
