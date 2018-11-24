@@ -99,7 +99,7 @@ $ source ~/.profile
 $ sudo apt-get install -y maven
 ```
 
-## Elixir
+**Elixir**
 ```
 $ sudo apt-get install -y elixir
 
@@ -112,7 +112,7 @@ $ sudo apt-get install crystal
 $ sudo apt-get install build-essential
 ```
 
-## Python 3
+**Python 3**
 ```
 $ sudo apt-get install -y python3-pip
 $ sudo apt-get install -y python3-venv
@@ -120,7 +120,7 @@ $ sudo apt-get install -y python3-venv
 
 For Ruby, follow the instructions on [Ruby Verion Manager](https://rvm.io/rvm/install)
 
-## .Net Core
+**.Net Core**
 ```
 $ wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
 $ sudo dpkg -i packages-microsoft-prod.deb
@@ -129,7 +129,7 @@ $ sudo apt-get update
 $ sudo apt-get install -y dotnet-hosting-2.0.8
 ```
 
-## Kotlin
+**Kotlin**
 ```
 # first install java 8 or later
 $ wget -O sdk.install.sh "https://get.sdkman.io"
@@ -138,12 +138,12 @@ $ source ~/.sdkman/bin/sdkman-init.sh
 $ sdk install kotlin
 ```
 
-## Heroku Cli
+**Heroku Cli**
 ```
 $ sudo snap install heroku --classic
 ```
 
-## Salesforce Cli
+**Salesforce Cli**
 ```
 $ wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
 $ mkdir sfdx
@@ -229,6 +229,16 @@ $ sudo apt-get install -y imagemagick
 $ sudo apt-get install -y chromium-browser
 $ sudo apt-get install -y lynx
 $ sudo apt-get install -y wget curl
+```
+
+**Social**
+```
+$ sudo snap spotify
+```
+
+**Video**
+```
+$ sudo snap vlc
 ```
 
 **Docker**
