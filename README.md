@@ -73,13 +73,13 @@ $ sudo apt-get update -y
 $ sudo apt-get install -y mame
 ```
 
-**Database**
+**Databases Clients**
 ```
 $ sudo apt-get install -y mysql-client
 $ sudo apt-get install -y postgresql-client
 $ sudo apt-get install -y redis-tools
 
-# MongoDB v4.0
+**MongoDB v4.0**
 $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
 $ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
 $ sudo apt-get install pmongodb-org-tools mongodb-org-shell -y
@@ -138,6 +138,12 @@ $ source ~/.sdkman/bin/sdkman-init.sh
 $ sdk install kotlin
 ```
 
+**GO Lang**
+```
+sudo snap install --classic go
+```
+
+# first install java 8 or later
 **Heroku Cli**
 ```
 $ sudo snap install heroku --classic
@@ -251,6 +257,10 @@ $ sudo apt-get install -y docker-ce
 $ sudo gpasswd -a ${USER} docker
 $ sudo systemctl enable docker
 $ sudo systemctl start docker
+
+# Docker Compose
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 **Nodejs**
