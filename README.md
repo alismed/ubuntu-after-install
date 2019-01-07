@@ -141,6 +141,7 @@ $ sdk install kotlin
 **GO Lang**
 ```
 sudo snap install --classic go
+export GOPATH=$HOME/go
 ```
 
 # first install java 8 or later
