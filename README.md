@@ -281,9 +281,9 @@ export NVM_DIR="$HOME/.nvm"
 $ source ~/<profile-file>
 ```
 
-**Install**
+_Install_
 
-List the last version
+List the versions
 ```
 $ nvm ls-remote
 # choice the version
@@ -292,6 +292,11 @@ $ nvm install [x.x.x]
 
 [Install packages](https://github.com/alismed/npm-package-install)
 
+
+**Yarn**
+```
+$ sudo apt-get install -y --no-install-recommends yarn
+```
 
 **Communicators**
 ```
