@@ -64,13 +64,12 @@ $ sudo apt-get install -y ubuntu-make
 ```
 $ sudo apt-get install -y zsnes
 $ sudo apt-get install -y stella
-$ sudo apt-get install -y mame mame-extra
-$ sudo snap install dosbox-x
-
 # Mame
-$ sudo add-apt-repository ppa:c.falco/mame -y
-$ sudo apt-get update -y
-$ sudo apt-get install -y mame
+$ sudo apt-get install -y mame 
+$ mkdir -p ~/mame/roms
+
+# DosBox
+$ sudo snap install dosbox-x
 ```
 
 **Databases Clients**
