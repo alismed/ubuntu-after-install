@@ -45,6 +45,10 @@ $ sudo dconf update
 **Git**
 ```
 $ sudo apt-get install -y git tig
+
+# ssh key
+$ ssh-keygen -t rsa -b 4096 -C "<your_email@example.com>"
+cat ~/.ssh/id_rsa.pub
 ```
 
 **System**
@@ -126,6 +130,12 @@ $ sudo dpkg -i packages-microsoft-prod.deb
 $ sudo apt-get install apt-transport-https
 $ sudo apt-get update
 $ sudo apt-get install -y dotnet-hosting-2.0.8
+
+#.NET SDK
+$ sudo add-apt-repository universe
+$ sudo apt-get install apt-transport-https
+$ sudo apt-get update
+$ sudo apt-get install dotnet-sdk-2.2
 ```
 
 **Kotlin**
@@ -143,9 +153,9 @@ sudo snap install --classic go
 export GOPATH=$HOME/go
 ```
 
-# first install java 8 or later
 **Heroku Cli**
 ```
+# first install java 8 or later
 $ sudo snap install heroku --classic
 ```
 
@@ -299,7 +309,9 @@ $ sudo apt-get install -y --no-install-recommends yarn
 
 **Communicators**
 ```
+$ sudo apt-get install -y --no-install-recommends yarn
 # is necessary restart after install
 $ sudo snap install slack --classic
 $ sudo snap install skype --classic
+```
 
