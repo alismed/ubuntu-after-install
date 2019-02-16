@@ -141,10 +141,8 @@ $ sudo apt-get install dotnet-sdk-2.2
 **Kotlin**
 ```
 # first install java 8 or later
-$ wget -O sdk.install.sh "https://get.sdkman.io"
-$ bash sdk.install.sh
-$ source ~/.sdkman/bin/sdkman-init.sh 
-$ sdk install kotlin
+
+$ sudo snap install kotlin --classic
 ```
 
 **GO Lang**
