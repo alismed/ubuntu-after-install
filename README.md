@@ -188,7 +188,7 @@ $ sudo apt-get install sublime-text -y
 
 **Visual Studio Code**
 ```
-$ sudo snap install vscode --classic
+$ sudo snap install code --classic
 ```
 
 **IDE's**
