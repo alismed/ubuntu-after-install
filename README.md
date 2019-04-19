@@ -62,6 +62,7 @@ $ sudo apt-get install -y glances
 $ sudo apt-get install -y putty
 $ sudo apt-get install -y gnupg2
 $ sudo apt-get install -y ubuntu-make
+$ sudo apt-get install -y neofetch
 ```
 
 **Games**
