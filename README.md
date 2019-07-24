@@ -1,5 +1,5 @@
 ## Ubuntu after install
-My setup after install Ubuntu 18.04.1
+My setup after install Ubuntu 19.10
 
 **Update packages**
 
@@ -72,6 +72,9 @@ $ sudo apt-get install -y stella
 # Mame
 $ sudo apt-get install -y mame 
 $ mkdir -p ~/mame/roms
+
+# Doom
+$ sudo apt-get install -y chocolate-doom
 
 # DosBox
 $ sudo snap install dosbox-x
