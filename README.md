@@ -304,6 +304,12 @@ $ nvm install [x.x.x]
 [Install packages](https://github.com/alismed/npm-package-install)
 
 
+**Vue**
+```shell
+$ npm install -g @vue/cli
+$ npm install -g @vue/cli-init
+```
+
 **Yarn**
 ```shell
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
