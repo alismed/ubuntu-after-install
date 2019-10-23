@@ -1,6 +1,21 @@
 ## Ubuntu after install
 My setup after install Ubuntu 19.10
 
+- [IDE's](#ides)
+- [System](#system)
+- [Git](#git)
+- [Games](#games)
+- [Databases](#databases)
+- [Languages](#languages)
+- [CLI's](#cloudcli)
+- [Terminal](#terminal)
+- [Browsers](#browser)
+- [Video](#video)
+- [Docker](#docker)
+- [Javascript packages](#jspackage)
+- [Comunicators](#comunicators)
+
+<a id="system"></a>
 **Update packages**
 
 ```
@@ -42,6 +57,7 @@ Execute
 $ sudo dconf update
 ```
 
+<a id="git"></a>
 **Git**
 ```
 $ sudo apt-get install -y git tig
@@ -51,6 +67,7 @@ $ ssh-keygen -t rsa -b 4096 -C "<your_email@example.com>"
 cat ~/.ssh/id_rsa.pub
 ```
 
+<a id="system"></a>
 **System**
 
 ```
@@ -65,6 +82,7 @@ $ sudo apt-get install -y ubuntu-make
 $ sudo apt-get install -y neofetch
 ```
 
+<a id="games"></a>
 **Games**
 ```
 $ sudo apt-get install -y zsnes
@@ -80,6 +98,7 @@ $ sudo apt-get install -y chocolate-doom
 $ sudo snap install dosbox-x
 ```
 
+<a id="databases"></a>
 **Databases Clients**
 ```
 $ sudo apt-get install -y mysql-client
@@ -92,6 +111,7 @@ $ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-or
 $ sudo apt-get install pmongodb-org-tools mongodb-org-shell -y
 ```
 
+<a id="languages"></a>
 **Languages**
 ```
 $ sudo apt-get install -y openjdk-8-jdk
@@ -155,6 +175,7 @@ sudo snap install --classic go
 export GOPATH=$HOME/go
 ```
 
+<a id="cloudcli"></a>
 **Heroku Cli**
 ```
 # first install java 8 or later
@@ -169,12 +190,12 @@ $ tar xJf sfdx-linux-amd64.tar.xz -C sfdx --strip-components 1
 $ ./sfdx/install
 ```
 
+<a id="ides"></a>
 **Text Editors**
 ```
 $ sudo apt-get install -y vim
 ```
 For Vundle, [follow this](https://github.com/alismed/vimfiles).
-
 
 **Postman**
 ```
@@ -213,6 +234,7 @@ $ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz
 - Will take a few minutes to finish
 ```
 
+<a id="terminal"></a>
 **Terminal**
 ```
 $ sudo apt-get install -y terminator
@@ -242,6 +264,7 @@ $ sudo apt-get install -y gimp
 $ sudo apt-get install -y imagemagick
 ```
 
+<a id="browser"></a>
 **Browsers**
 ```
 $ sudo apt-get install -y chromium-browser
@@ -249,16 +272,19 @@ $ sudo apt-get install -y lynx
 $ sudo apt-get install -y wget curl
 ```
 
+<a id="social"></a>
 **Social**
 ```
 $ sudo snap spotify
 ```
 
+<a id="video"></a>
 **Video**
 ```
 $ sudo snap vlc
 ```
 
+<a id="docker"></a>
 **Docker**
 ```
 $ sudo apt-get install apt-transport-https ca-certificates software-properties-common
@@ -273,6 +299,15 @@ $ sudo systemctl start docker
 # Docker Compose
 $ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 $ sudo chmod +x /usr/local/bin/docker-compose
+```
+
+<a id="jspackage"></a>
+**Yarn**
+```shell
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update
+sudo apt-get install yarn
 ```
 
 **Nodejs**
@@ -310,14 +345,7 @@ $ npm install -g @vue/cli
 $ npm install -g @vue/cli-init
 ```
 
-**Yarn**
-```shell
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update
-sudo apt-get install yarn
-```
-
+<a id="comunicators"></a>
 **Communicators**
 ```
 $ sudo apt-get install -y --no-install-recommends yarn
