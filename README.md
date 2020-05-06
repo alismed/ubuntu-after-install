@@ -80,6 +80,7 @@ $ sudo apt-get install -y putty
 $ sudo apt-get install -y gnupg2
 $ sudo apt-get install -y ubuntu-make
 $ sudo apt-get install -y neofetch
+$ sudo apt-get install -y pv
 ```
 
 <a id="games"></a>
@@ -188,6 +189,12 @@ $ wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.ta
 $ mkdir sfdx
 $ tar xJf sfdx-linux-amd64.tar.xz -C sfdx --strip-components 1
 $ ./sfdx/install
+```
+
+**Apache Ant**
+
+```
+sudo snap install ant --classic
 ```
 
 <a id="ides"></a>
