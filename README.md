@@ -88,6 +88,7 @@ $ sudo apt-get install -y pv
 ```
 $ sudo apt-get install -y zsnes
 $ sudo apt-get install -y stella
+$ sudo apt-get install -y mupen64plus-ui-console
 # Mame
 $ sudo apt-get install -y mame 
 $ mkdir -p ~/mame/roms
