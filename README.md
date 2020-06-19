@@ -105,6 +105,7 @@ $ sudo snap install dosbox-x
 ```
 $ sudo apt-get install -y mysql-client
 $ sudo apt-get install -y postgresql-client
+$ sudo apt-get install -y libpq-dev
 $ sudo apt-get install -y redis-tools
 
 **MongoDB v4.0**
