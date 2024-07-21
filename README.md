@@ -312,6 +312,14 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docke
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
+**LocalStack**
+
+Dependencies: java, maven, python, nodejs
+
+```
+pip install --no-cache --upgrade localstack
+```
+
 <a id="jspackage"></a>
 **Yarn**
 ```shell
