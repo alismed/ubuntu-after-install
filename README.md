@@ -65,6 +65,9 @@ $ sudo apt-get install -y git tig
 # ssh key
 $ ssh-keygen -t rsa -b 4096 -C "<your_email@example.com>"
 cat ~/.ssh/id_rsa.pub
+
+# default editor
+git config --global core.editor vim
 ```
 
 <a id="system"></a>
